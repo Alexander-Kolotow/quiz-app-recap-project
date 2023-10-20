@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+h1 {
+  color: white;
+  font-size: 30px;
+}
+.question-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+.question {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
