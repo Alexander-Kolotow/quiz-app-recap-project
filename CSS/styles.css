@@ -18,7 +18,7 @@ body {
   align-items: center;
 }
 .cards {
-    padding-top: 120px;
+  padding-top: 120px;
 }
 .question-box {
   margin: 10px;
@@ -28,33 +28,36 @@ body {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.answer-button {
+  width: fit-content;
+}
 .question {
   font-size: 20px;
   font-weight: bold;
   color: #333;
 }
 .fixed-bottom-navbar {
-    display: flex;
-    justify-content: space-evenly;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
 }
 ul {
-    display: flex;
-    list-style: none; 
+  display: flex;
+  list-style: none;
 }
 li {
-    padding: 20px;
-    color: white;
+  padding: 20px;
+  color: white;
 }
 ul li a {
-    color: green;
-    font-size: 1.4rem;
-    text-decoration: none;
-  }
-  ul li a:hover {
-    color: greenyellow;
-  }
+  color: green;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: greenyellow;
+}
