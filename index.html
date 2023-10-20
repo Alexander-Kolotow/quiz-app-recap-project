@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homepage</title>
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -12,6 +19,8 @@
       <h1>Quiz APP</h1>
     </header>
 
+    <!--Diese Section musste ich barrierefrei machen. <div> durch <article> ersetzt und mit <h> gearbeitet, um mehr Semantik zu gewährleisten.-->
+    <!--Die h1,h2,h3 usw. Elemente müssen alle im CSS noch eine einheitliche Schriftgröße bekommen.-->
     <section class="cards">
       <article class="question-box">
         <h2>Frage 1: Hier kommt die Frage rein</h2>
@@ -31,9 +40,15 @@
 
     <nav class="fixed-bottom-navbar">
       <ul>
-        <li><a href="#">homepage</a></li>
-        <li><a href="bookmarks.html">bookmarks</a></li>
-        <li><a href="profile.html">profile</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+        </li>
+        <li>
+          <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+        </li>
       </ul>
     </nav>
   </body>

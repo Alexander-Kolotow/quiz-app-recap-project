@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homepage</title>
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -12,6 +19,7 @@
       <h1>Quiz APP</h1>
     </header>
 
+    <!--hier habe ich das "alt" genauer beschrieben.-->
     <img src="" alt="profile picture of Max Doe" />
     <h2>Max Doe</h2>
 
@@ -23,6 +31,8 @@
       voluptate.
     </p>
 
+    <!--aria-hidden="true" ist für screenreader, damit erkannt wird, dass die Icons als Deko dienen-->
+    <!--aria-label dient zur Beschreibung der Anzahl der Lesezeichen sowie der Fragen (ins.)-->
     <div class="total-questions">
       <i class="fas fa-star" aria-hidden="true"></i>
       <span aria-label="numbers of created questions">5</span>
@@ -36,13 +46,19 @@
     <h4>Settings</h4>
 
     <h5>Dark Mode</h5>
-    <!-- switch for dark mode, but how??-->
+    <!-- switch for dark mode muss hier noch hin.-->
 
     <nav class="fixed-bottom-navbar">
       <ul>
-        <li><a href="index.html">homepage</a></li>
-        <li><a href="bookmarks.html">bookmarks</a></li>
-        <li><a href="#">profile</a></li>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house"></a>
+          </li>
+        <li>
+          <a href="bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+        </li>
       </ul>
     </nav>
   </body>
