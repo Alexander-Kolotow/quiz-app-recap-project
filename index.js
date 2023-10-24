@@ -1,6 +1,6 @@
-const bookmarkIcon = document.querySelector('[data-js="bookmark"]');
-const toggleMode = document.querySelector('[data-js="toggle-button"]');
+const bookmark = document.querySelector('[data-js="bookmark-icon"]');
+const toggleMode = document.querySelector('[data-js="toggle-bookmark"]');
 
 toggleMode.addEventListener("click", () => {
-  bookmarkIcon.classList.toggle("highlight");
+  bookmark.classList.toggle("highlight");
 });
