@@ -18,7 +18,7 @@ h4,
 h5 {
   font-size: 20px;
 }
-body {
+.flex {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,15 +27,17 @@ body {
   padding-top: 120px;
 }
 .question-box {
-  margin: 10px;
+  margin: 20px;
+  padding: 20px;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 .answer-button {
   width: fit-content;
+  align-items: center;
 }
 .question {
   font-size: 20px;
