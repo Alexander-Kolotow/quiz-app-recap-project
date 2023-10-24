@@ -81,3 +81,12 @@ ul li a:hover {
   bottom: 25px;
   left: 800px;
 }
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  top: 100px;
+  right: 350px;
+}
