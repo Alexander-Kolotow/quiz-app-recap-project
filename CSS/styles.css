@@ -74,11 +74,10 @@ ul li a:hover {
 .highlight {
   color: greenyellow;
 }
-button:not(.answer-button) {
+.bookmarks {
   font-size: 1.4rem;
   color: green;
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
+  position: relative;
+  bottom: 25px;
+  left: 800px;
 }
