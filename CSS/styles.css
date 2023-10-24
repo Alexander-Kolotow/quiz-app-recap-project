@@ -27,6 +27,7 @@ h5 {
   padding-top: 120px;
 }
 .question-box {
+  position: absolute;
   margin: 20px;
   padding: 20px;
   width: 100%;
