@@ -67,7 +67,9 @@ ul li a:hover {
   color: greenyellow;
 }
 /*Hiermit wird die Antwort "unsichtbar"*/
-
 .hide {
   display: none;
+}
+.highlight {
+  color: greenyellow;
 }
