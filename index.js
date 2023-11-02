@@ -8,3 +8,18 @@ bookmarkIcons.forEach((icon) => {
     icon.classList.toggle("highlight");
   });
 });
+
+// Holen Sie sich die beiden Icon-Elemente
+const toggleOff = document.getElementById("toggle-off");
+const toggleOn = document.getElementById("toggle-on");
+
+// Fügen Sie einen Klick-Ereignishandler zu jedem Icon hinzu
+toggleOff.addEventListener("click", () => {
+  toggleOff.style.display = "none";
+  toggleOn.style.display = "inline-block";
+});
+
+toggleOn.addEventListener("click", () => {
+  toggleOn.style.display = "none";
+  toggleOff.style.display = "inline-block";
+});
