@@ -41,7 +41,7 @@ form.addEventListener("submit", (event) => {
 });
 
 // Display Characters!
-// Aktuell funktioniert nur das erste textarea Feld. Ich finde keine Lösung ohne forEach-Schleife, auch nicht querySelectorAll funktioniert nicht.
+// Aktuell funktioniert nur das erste textarea Feld. Ich finde keine Lösung, ohne forEach-Schleife, auch der querySelectorAll funktioniert nicht.
 
 const textareas = document.querySelector('[data-js="characters-left"]');
 const remainingCharacters = document.querySelector(
