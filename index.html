@@ -13,28 +13,26 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
+  <!-- Accessibility? -->
   <body class="flex">
     <header>
       <h1>Quiz APP</h1>
     </header>
 
-    <!--Diese Section musste ich barrierefrei machen. <div> durch <article> ersetzt und mit <h> gearbeitet, um mehr Semantik zu gewährleisten.-->
-    <!--Die h1,h2,h3 usw. Elemente müssen alle im CSS noch eine einheitliche Schriftgröße bekommen.-->
     <section class="cards">
       <article class="question-box">
         <span class="bookmarks">
           <i
             class="fa-solid fa-bookmark"
-            class="bookmarks"
             data-js="bookmark"
           ></i>
         </span>
         <h2>Frage 1: What is the capital of the country Norway?</h2>
         <button class="answer-button">Show Answer</button>
-        <p class="hide"><b>Answer:</b> Oslo</p>
+        <p class="hidden"><b>Answer:</b> Oslo</p>
       </article>
 
+      <!-- later we need those questions and answers for JS createElement in forms
       <article class="question-box">
         <span class="bookmarks">
           <i
@@ -79,6 +77,7 @@
         <p class="hide"><b>Answer:</b> Schindler's List</p>
       </article>
     </section>
+-->
 
     <nav class="fixed-bottom-navbar">
       <ul>
@@ -90,6 +89,9 @@
         </li>
         <li>
           <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <a href="form.html"><i class="fa-solid fa-question"></i></a>
         </li>
       </ul>
     </nav>

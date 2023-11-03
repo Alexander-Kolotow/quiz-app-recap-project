@@ -1,3 +1,5 @@
+/* dont forget about CSS Structure!*/
+
 header {
   display: flex;
   justify-content: center;
@@ -46,6 +48,7 @@ h5 {
 .fixed-bottom-navbar {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   z-index: 1;
   background-color: black;
@@ -83,13 +86,15 @@ ul li a:hover {
   top: 100px;
   right: 350px;
 }
-
-/* CSS Code explizit für den Dark Mode!*/
-
-.dark-mode-active {
-  background-color: black;
-  color: white;
-}
 .hidden {
   display: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+textarea {
+  width: 250px;
+  height: 250px;
 }
