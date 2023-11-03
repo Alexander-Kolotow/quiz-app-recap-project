@@ -44,22 +44,16 @@ h5 {
   color: #333;
 }
 .fixed-bottom-navbar {
-  display: flex;
-  justify-content: space-evenly;
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   z-index: 1;
   background-color: black;
 }
 ul {
   display: flex;
+  justify-content: space-evenly;
   list-style: none;
-}
-li {
-  padding: 20px;
 }
 ul li a {
   color: green;
@@ -79,9 +73,6 @@ ul li a:hover {
 .bookmarks {
   font-size: 1.4rem;
   color: green;
-  position: relative;
-  bottom: 25px;
-  left: 800px;
 }
 .profile-img {
   width: 200px;
