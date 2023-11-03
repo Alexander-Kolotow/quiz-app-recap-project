@@ -1,4 +1,4 @@
-// funktioniert so nicht, bisher nur Erfolg mit forEach-Schleife!
+// Das Toggeln des bookmark Icons funktioniert so nicht, bisher nur Erfolg mit forEach-Schleife!
 const bookmarkIcon = document.querySelector('[data-js="bookmark"]');
 
 bookmarkIcon.addEventListener("click", function () {
