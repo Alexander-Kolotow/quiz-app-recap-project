@@ -42,19 +42,25 @@ form.addEventListener("submit", (event) => {
 
 // Display Characters!
 // Aktuell funktioniert nur das erste textarea Feld. Ich finde keine Lösung, ohne forEach-Schleife, auch der querySelectorAll funktioniert nicht.
-
-const textareas = document.querySelector('[data-js="characters-left"]');
-const remainingCharacters = document.querySelector(
-  '[data-js="remainingCharacters"]'
+const textarea1 = document.querySelector('[data-js="characters-left-1"]');
+const textarea2 = document.querySelector('[data-js="characters-left-2"]');
+const remainingCharacters1 = document.querySelector(
+  '[data-js="remainingCharacters1"]'
 );
-const maxLength = textareas.getAttribute("maxlength");
+const remainingCharacters2 = document.querySelector(
+  '[data-js="remainingCharacters2"]'
+);
 
-const updateAmountLeft = (value) => {
-  remainingCharacters.innerText = value;
-};
+function characterCounter(textarea, remainingCharacters) {
+  const maxLength = textarea.getAttribute("maxlength");
 
-updateAmountLeft(maxLength);
+  const updateAmountLeft = (value) => {
+    remainingCharacters.innerText = value;
+  };
 
-textareas.addEventListener("input", () => {
-  updateAmountLeft(maxLength - textareas.value.length);
-});
+  updateAmountLeft(maxLength);
+
+  textarea.addEventListener("input", () => {
+    updateAmountLeft(maxLength - textarea.value.length);
+  });
+}

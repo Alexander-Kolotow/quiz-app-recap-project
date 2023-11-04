@@ -1,8 +1,12 @@
 // Das Toggeln des bookmark Icons funktioniert so nicht, bisher nur Erfolg mit forEach-Schleife!
-const bookmarkIcon = document.querySelector('[data-js="bookmark"]');
+const bookmark = document.querySelector('[data-js="bookmark"]');
 
-bookmarkIcon.addEventListener("click", function () {
-  bookmarkIcon.classList.toggle("greenyellow");
+bookmark.addEventListener("click", () => {
+  if (bookmark.classList.contains("highlight")) {
+    bookmark.classList.remove("highlight");
+  } else {
+    bookmark.classList.add("highlight");
+  }
 });
 
 const answerButton = document.querySelector(".answer-button");
