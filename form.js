@@ -40,8 +40,7 @@ form.addEventListener("submit", (event) => {
   tagInput.value = "";
 });
 
-// Display Characters!
-// Aktuell funktioniert nur das erste textarea Feld. Ich finde keine Lösung, ohne forEach-Schleife, auch der querySelectorAll funktioniert nicht.
+// Anzeige der verbleibenden Zeichen in den Text Input Feldern.
 
 const questionInput = document.querySelector('[data-js="question-input"]');
 const answerInput = document.querySelector('[data-js="answer-input"]');
@@ -55,6 +54,7 @@ const remainingCharacters2 = document.querySelector(
 
 const maxLength1 = questionInput.getAttribute("maxlength"); // Hier lässt sich die eingestellte maxlength im HTML Code ziehen. Aktuell 150 Zeichen.
 const maxLength2 = answerInput.getAttribute("maxlength"); // Hiermit könnte ich allerdings 2 verschiedene maxlength für die textareas definieren.
+// Einmal für das Question Textfeld und einmal für das Antwort Textfeld.
 
 const updateAmountLeft1 = (value) => {
   remainingCharacters1.innerText = value;
