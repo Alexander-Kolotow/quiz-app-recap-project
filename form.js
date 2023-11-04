@@ -42,8 +42,10 @@ form.addEventListener("submit", (event) => {
 
 // Display Characters!
 // Aktuell funktioniert nur das erste textarea Feld. Ich finde keine Lösung, ohne forEach-Schleife, auch der querySelectorAll funktioniert nicht.
-const textarea1 = document.querySelector('[data-js="characters-left-1"]');
-const textarea2 = document.querySelector('[data-js="characters-left-2"]');
+
+const questionInput = document.querySelector('[data-js="question-input"]');
+const answerInput = document.querySelector('[data-js="answer-input"]');
+
 const remainingCharacters1 = document.querySelector(
   '[data-js="remainingCharacters1"]'
 );
@@ -51,16 +53,24 @@ const remainingCharacters2 = document.querySelector(
   '[data-js="remainingCharacters2"]'
 );
 
-function characterCounter(textarea, remainingCharacters) {
-  const maxLength = textarea.getAttribute("maxlength");
+const maxLength1 = questionInput.getAttribute("maxlength"); // Hier lässt sich die eingestellte maxlength im HTML Code ziehen. Aktuell 150 Zeichen.
+const maxLength2 = answerInput.getAttribute("maxlength"); // Hiermit könnte ich allerdings 2 verschiedene maxlength für die textareas definieren.
 
-  const updateAmountLeft = (value) => {
-    remainingCharacters.innerText = value;
-  };
+const updateAmountLeft1 = (value) => {
+  remainingCharacters1.innerText = value;
+};
 
-  updateAmountLeft(maxLength);
+const updateAmountLeft2 = (value) => {
+  remainingCharacters2.innerText = value;
+};
 
-  textarea.addEventListener("input", () => {
-    updateAmountLeft(maxLength - textarea.value.length);
-  });
-}
+updateAmountLeft1(maxLength1);
+updateAmountLeft2(maxLength2);
+
+questionInput.addEventListener("input", () => {
+  updateAmountLeft1(maxLength1 - questionInput.value.length);
+});
+
+answerInput.addEventListener("input", () => {
+  updateAmountLeft2(maxLength2 - answerInput.value.length);
+});
