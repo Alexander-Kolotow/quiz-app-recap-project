@@ -98,3 +98,9 @@ textarea {
   width: 250px;
   height: 250px;
 }
+.darkgrey {
+  background-color: darkgrey;
+}
+#toggle-icon-off {
+  margin-top: 100px;
+}
